@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav>
-            <button class="Home">Home</button>
-            <button class="Menu">Menu</button>
-            <button class="About">About</button>
+        <nav class="tab">
+            <button class="Home" onclick="openCity(event, 'Home')">Home</button>
+            <button class="Menu" onclick="openCity(event, 'Menu')">Menu</button>
+            <button class="About" onclick="openCity(event, 'About')">About</button>
         </nav>
     </header>
-    <div id="content">
-
+    <div id="About" class="tabcontent">
+           <h1> The Goodest of the Restaurants </h1>
+           <img src="flag-for-georgia-svgrepo-com.svg" alt="">
+            <h3>About our Restaurant:</h3>
+        
+             <p class="border">Our restaurant has been funded by Kamil Toboła in the 1976, in Wrocław. As an avid traveler, who's visited more than 40 countries <br>
+            and has eaten and enjoyed many famous cuisines. But it was the Georgian kitchen, who he loved and loves to this day, the most. <br>
+            Therefore, when he returned to his hometown, Wrocław, he wanted everyone to experience the beautiful food of our european friends. <br>
+            Nowadays, our restaurants are spread across Poland, and had pleasure serving such people as: <br>
+            Aleksander Kwaśniewski
+            <br>
+            Cezary Pazura
+            <br>
+            Agnieszka Chylińska
+            <br>
+            Quebonafide
+            <br>
+            Natalia Kaczmarek
+        </p>
+               
+        </div>
+        
+        <div id="Menu" class="tabcontent">
+            <h2>Menu</h2>
+            <p class="border">London is the capital city of England.</p>
+          </div>
+                
     </div>
 </body>
 </html>

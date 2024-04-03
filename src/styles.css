@@ -1,0 +1,92 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#About > img {
+    width: 150px;
+}
+body {
+    background-image: url(Fotolia_131131395_M.jpg);
+    background-size: cover;
+    background-color: #f0fdf4;
+}
+
+@media screen and (max-width: 800px) {
+    .tabcontent {
+        font-size: 16px;
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  @media screen and (max-width: 800px) {
+    #About {
+        font-size: 16px;
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  
+#About {
+    text-align: center;
+}
+
+#About > h1 {
+    font-family: fantasy;
+    padding: 20px;
+}
+#About > p {
+    padding: 10px;
+}
+#Menu  {
+    color: white;
+}
+
+
+nav {
+    background-color: #9f1239;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+nav > button {
+    color: white;
+    background-color: #9f1239;
+    font-size: 16px;
+    padding: 12px 35px 12px;
+    border-radius: 9px; 
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #9f1239;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+
+  /* Style the tab content */
+  .tabcontent {
+    color: #f7fda7;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #9f1239;
+    border-top: none;
+    width: max-content;
+    margin: auto;
+  }
