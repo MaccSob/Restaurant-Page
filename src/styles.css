@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 #About > img {
@@ -26,20 +27,81 @@ body {
         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
   }
-  
-#About {
+  #Menu > li {
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    background-color: #9f1239;
+    opacity: 85%;
+    padding: 15 15px;
+  }
+   li > img {
+    width: 100%;
+    max-width: 200px;
+
+  }
+  .lili {
+    font-weight: bold;
+    color: #fbffc2;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    opacity: 85%;
+    padding: 15 15px;
+  }
+  #Home > h1, .open {
     text-align: center;
+  }
+  a > img {
+    max-width: 150px;
+  }
+  li > img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+  @media screen and (max-width: 800px) {
+    li > img {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        max-width: 400px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    #Menu, #About {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        width: 300px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    #Home {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        width: 400px;
+    }
+  }
+  @media screen and (max-width:800px) {
+    body {
+      background-size: cover;
+      background-attachment:fixed }
+  }
+#About, #Menu {
+    text-align: center;
+        border: 0.5px thin #9f1239;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 
 #About > h1 {
     font-family: fantasy;
     padding: 20px;
+    
 }
 #About > p {
     padding: 10px;
 }
 #Menu  {
     color: white;
+}
+#Menu > h2 {
+    font-size: 35px;
+    text-align: center;
 }
 
 
@@ -56,6 +118,7 @@ nav > button {
     padding: 12px 35px 12px;
     border-radius: 9px; 
 }
+
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -78,14 +141,18 @@ nav > button {
   .tab button:hover {
     background-color: #ddd;
   }
-  
+  .open  {
+    color: white;
+    font-size: 22px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  }
 
   /* Style the tab content */
   .tabcontent {
     color: #f7fda7;
     display: none;
     padding: 6px 12px;
-    border: 1px solid #9f1239;
     border-top: none;
     width: max-content;
     margin: auto;
