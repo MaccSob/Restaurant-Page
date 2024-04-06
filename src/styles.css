@@ -40,6 +40,9 @@ body {
     max-width: 200px;
 
   }
+  #About > p {
+    max-width: 500px;
+  }
   .lili {
     font-weight: bold;
     color: #fbffc2;
