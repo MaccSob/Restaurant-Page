@@ -42,7 +42,7 @@ function openCity(evt, cityName) {
 
   let img = document.createElement('img');
   img.className = 'img1';
-  img.src = "flag-for-georgia-svgrepo-com.svg";
+  img.src = "img/flag-for-georgia-svgrepo-com.svg";
   div.appendChild(img);
 
 
